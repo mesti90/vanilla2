@@ -1,0 +1,1 @@
+snakemake --use-singularity -s vanilla2/Snakefile --profile vanilla2/profile --configfile vanilla2/config/config.yaml --config samples=staphy_samples.20260629.tsv --cores 60

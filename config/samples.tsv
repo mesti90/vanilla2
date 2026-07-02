@@ -1,0 +1,6 @@
+sample	type	r1	r2	assembly	genbank
+WT01	WT	data/WT01_R1.fastq.gz	data/WT01_R2.fastq.gz		
+WT02	WT	data/WT02_R1.fastq.gz	data/WT02_R2.fastq.gz		
+MUT01	MUT	data/MUT01_R1.fastq.gz	data/MUT01_R2.fastq.gz		
+REF_A	REF			references/REF_A.fasta.gz	references/REF_A.gbk
+REF_B	REF			references/REF_B.fasta	references/REF_B.gbk

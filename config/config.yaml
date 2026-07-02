@@ -1,0 +1,45 @@
+samples: config/samples.tsv
+
+host_reference: References/GCF_000013425.1_ASM1342v1_genomic.fna
+
+tmpdir: "/node10_R10/vasarhelyib/tmp"
+
+singularity-args: "--bind /node8_R10,/node10_R10,/scratch"
+
+threads:
+  fastp: 4
+  bwa: 8
+  samtools: 4
+  megahit: 16
+  snippy: 8
+  pharokka: 8
+  ragtag: 4
+  breseq: 3
+  annotation: 4
+
+assembly:
+  min_contig_length: 1000
+
+snippy:
+  mincov: 10
+  minfrac: 0.9
+
+pharokka:
+  db: "/node8_R10/kintses_lab/databases/pharokka/pharokka_v1.8.0"
+
+phold:
+  db: "/node8_R10/kintses_lab/databases/phold/phold_20260528/"
+
+containers:
+  fastp: "/home/vasarhelyib/containers/staphb-fastp.1.3.3.sif"
+  bwa: "/home/vasarhelyib/containers/staphb-bwa.0.7.19.sif"
+  samtools: "/home/vasarhelyib/containers/staphb-samtools.1.23.sif"
+  seqkit: "/home/vasarhelyib/containers/staphb-seqkit.2.10.0.sif"
+  snippy: "/home/vasarhelyib/containers/staphb-snippy-4.6.0-SC2.img"
+  megahit: "/home/vasarhelyib/containers/biocontainers-megahit.1.2.9_cv1.sif"
+  ragtag: "/home/vasarhelyib/containers/biocontainers-ragtag.2.1.0.sif"
+  pharokka: "/home/vasarhelyib/containers/biocontainers-pharokka.1.9.1.sif"
+  phold: "/home/vasarhelyib/containers/mesti90-phold.1.2.0.sif"
+  breseq: "/home/vasarhelyib/containers/baldikacti-breseq.0.39.0.sif"
+  snpeff: "/home/vasarhelyib/containers/staphb-snpeff.5.2f.sif"
+  agat: "/home/vasarhelyib/containers/biocontainers-agat.1.7.0--pl5321hdfd78af_0.sif"
