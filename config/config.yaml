@@ -43,3 +43,5 @@ containers:
   breseq: "/home/vasarhelyib/containers/baldikacti-breseq.0.39.0.sif"
   snpeff: "/home/vasarhelyib/containers/staphb-snpeff.5.2f.sif"
   agat: "/home/vasarhelyib/containers/biocontainers-agat.1.7.0--pl5321hdfd78af_0.sif"
+  emboss: "/home/vasarhelyib/containers/staphb-emboss.6.6.0.sif"
+  diamond: "/home/vasarhelyib/containers/buchfink-diamond.2.1.11.sif"
